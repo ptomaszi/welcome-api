@@ -16,4 +16,4 @@ spec:
         - name: welcomeapi 
           image: tomaszpacr.azurecr.io/welcomeapi
           ports:
-          - containerPort: 8080
+          - containerPort: 80
