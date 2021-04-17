@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: welcomeapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: welcomeapi
+  template:
+    metadata:
+      labels:
+        app: welcomeapi 
+    spec:
+      containers:
+        - name: welcomeapi 
+          image: tomaszpacr.azurecr.io/welcomeapi
+          ports:
+          - containerPort: 8080
